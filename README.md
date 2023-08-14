@@ -85,7 +85,13 @@ If all are up all set if not start the container using the below command to star
 docker restart container-name-or-id
 ```
 ### Upload custom module in Odoo custom addons
+Just develop or clone or download the odoo module and use the bellow command to transfer your module to the container
 ```
-
+docker cp /path/to/your/local/file <container-id>:/mnt/custom_addons/
 ```
+### Restart the container
+```
+docker restart container-name-or-id
+```
+All set you now good to go
 
